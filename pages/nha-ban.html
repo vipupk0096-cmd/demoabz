@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BĐS Bán - Mua bán nhà đất, căn hộ</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="page-banner">
+        <div class="container text-center">
+            <h1>Mua Bán Bất Động Sản</h1>
+            <p>Hơn 10,000+ bất động sản đang chờ bạn khám phá</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="filter-section">
+            <form class="filter-grid">
+                <select class="filter-input">
+                    <option value="">Khu vực (Tỉnh/Thành)</option>
+                    <option value="hn">Hà Nội</option>
+                    <option value="hcm">TP. Hồ Chí Minh</option>
+                    <option value="dn">Đà Nẵng</option>
+                    <option value="hp">Hải Phòng</option>
+                    <option value="ct">Cần Thơ</option>
+                </select>
+                <select class="filter-input">
+                    <option value="">Loại BĐS</option>
+                    <option value="canho">Căn hộ chung cư</option>
+                    <option value="nharieng">Nhà riêng</option>
+                    <option value="bietthu">Biệt thự</option>
+                    <option value="datnen">Đất nền</option>
+                    <option value="shophouse">Shophouse</option>
+                </select>
+                <select class="filter-input">
+                    <option value="">Mức giá</option>
+                    <option value="1">Dưới 2 tỷ</option>
+                    <option value="2">2 - 5 tỷ</option>
+                    <option value="3">5 - 10 tỷ</option>
+                    <option value="4">10 - 20 tỷ</option>
+                    <option value="5">Trên 20 tỷ</option>
+                </select>
+                <button type="button" class="btn btn-primary">TÌM KIẾM</button>
+            </form>
+        </div>
+
+        <div class="featured-stats">
+            <div class="stat-item">
+                <h3>10,000+</h3>
+                <p>Bất động sản bán</p>
+            </div>
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Tin đăng mới/tháng</p>
+            </div>
+            <div class="stat-item">
+                <h3>50,000+</h3>
+                <p>Lượt xem/tháng</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Danh sách Nhà Bán mới nhất</h2>
+        
+        <div class="grid-properties" id="propertiesGrid">
+            <!-- Bất động sản bán sẽ được load từ dataManager -->
+        </div>
+
+        <div id="no-results" style="display: none; text-align: center; margin-top: 20px; color: #666;">
+            Không tìm thấy bất động sản nào phù hợp với bộ lọc của bạn.
+        </div>
+
+        <div class="pagination" id="pagination" style="display: none;">
+            <!-- Pagination sẽ được tạo động -->
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth-state.js"></script>
+    <script src="../js/dataManager.js"></script>
+    <script src="../js/properties.js"></script>
+
+</body>
+</html>

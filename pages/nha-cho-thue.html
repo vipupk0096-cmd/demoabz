@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BĐS Cho Thuê - Nhà đất cho thuê</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="page-banner">
+        <div class="container text-center">
+            <h1>Cho Thuê Bất Động Sản</h1>
+            <p>Hơn 5,000+ bất động sản đang cho thuê</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="filter-section">
+            <form class="filter-grid">
+                <select class="filter-input" name="location">
+                    <option value="">Khu vực (Tỉnh/Thành)</option>
+                    <option value="hn">Hà Nội</option>
+                    <option value="hcm">TP. Hồ Chí Minh</option>
+                    <option value="dn">Đà Nẵng</option>
+                    <option value="hp">Hải Phòng</option>
+                    <option value="ct">Cần Thơ</option>
+                </select>
+                <select class="filter-input" name="type">
+                    <option value="">Loại BĐS</option>
+                    <option value="canho">Căn hộ chung cư</option>
+                    <option value="nhaph">Nhà phố</option>
+                    <option value="bietthu">Biệt thự</option>
+                    <option value="nhao">Nhà ở</option>
+                    <option value="vanphong">Văn phòng</option>
+                </select>
+                <select class="filter-input" name="maxPrice">
+                    <option value="">Mức giá</option>
+                    <option value="5">Dưới 5 triệu/tháng</option>
+                    <option value="10">5 - 10 triệu/tháng</option>
+                    <option value="20">10 - 20 triệu/tháng</option>
+                    <option value="50">20 - 50 triệu/tháng</option>
+                    <option value="100">Trên 50 triệu/tháng</option>
+                </select>
+                <button type="submit" class="btn btn-primary">TÌM KIẾM</button>
+            </form>
+        </div>
+
+        <div class="featured-stats">
+            <div class="stat-item">
+                <h3>5,000+</h3>
+                <p>Bất động sản cho thuê</p>
+            </div>
+            <div class="stat-item">
+                <h3>200+</h3>
+                <p>Tin đăng mới/tháng</p>
+            </div>
+            <div class="stat-item">
+                <h3>25,000+</h3>
+                <p>Lượt xem/tháng</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Danh sách Nhà Cho Thuê mới nhất</h2>
+
+        <div class="grid-properties" id="propertiesGrid">
+            <!-- Bất động sản cho thuê sẽ được load từ dataManager -->
+        </div>
+
+        <div id="no-results" style="display: none; text-align: center; margin-top: 20px; color: #666;">
+            Không tìm thấy bất động sản nào phù hợp với bộ lọc của bạn.
+        </div>
+
+        <div class="pagination" id="pagination" style="display: none;">
+            <!-- Pagination sẽ được tạo động -->
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth-state.js"></script>
+    <script src="../js/dataManager.js"></script>
+    <script src="../js/properties.js"></script>
+</body>
+</html>
